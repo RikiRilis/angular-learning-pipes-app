@@ -1,0 +1,25 @@
+<p-panel header="Numeric Pipes" class="p-2">
+  <p>
+    Pipes from Angular - Usually on Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="number" subheader="For decimals ==> number:'1.2-2'">
+      {{totalSells}} ==> {{totalSells | number:'1.2-2'}}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="currency" subheader="currency:'[currency]':'[symbol]'">
+      {{totalSells}} ==> {{totalSells | currency:'HNL':'symbol-narrow':'1.2-2'}}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="percent" subheader="percent:'1.2-2'">
+      {{percent}} ==> {{percent | percent:'1.2-2'}}
+    </p-card>
+  </div>
+</div>
